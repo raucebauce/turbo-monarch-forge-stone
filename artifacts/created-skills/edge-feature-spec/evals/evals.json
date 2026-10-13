@@ -1,0 +1,30 @@
+{
+  "skill": "edge-feature-spec",
+  "test_cases": [
+    {
+      "name": "no_hypothesis",
+      "input": "Add referee crew tendencies as a feature (no hypothesis stated)",
+      "assertions": [
+        "Skill refuses"
+      ]
+    },
+    {
+      "name": "none_on_missing",
+      "input": "I want funding-rate delta in the crypto model",
+      "assertions": [
+        "Returns None on missing, never 0",
+        "Output file docs/features/{name}.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "no_future_test",
+      "input": "New feature: hours between injury report and kickoff",
+      "assertions": [
+        "No-future test present (row with as_of > decision_time leaves value unchanged)",
+        "Has next: line"
+      ]
+    }
+  ]
+}

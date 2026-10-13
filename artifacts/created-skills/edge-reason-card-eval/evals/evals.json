@@ -1,0 +1,30 @@
+{
+  "skill": "edge-reason-card-eval",
+  "test_cases": [
+    {
+      "name": "ungrounded_fact",
+      "input": "Are the Analyst reason cards actually accurate? (card cites fact absent from snapshot)",
+      "assertions": [
+        "Scored 0 on Grounded",
+        "Output file docs/reviews/{date}-reasoncards.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "hallucination_8pct",
+      "input": "Weekly reason card eval with 8% hallucination rate",
+      "assertions": [
+        "FAIL, prompt revision routed"
+      ]
+    },
+    {
+      "name": "no_brier_improvement",
+      "input": "I changed the Analyst prompt \u2014 evaluate it (no Brier improvement in 30d)",
+      "assertions": [
+        "Recommends w=1.0",
+        "Has next: line"
+      ]
+    }
+  ]
+}

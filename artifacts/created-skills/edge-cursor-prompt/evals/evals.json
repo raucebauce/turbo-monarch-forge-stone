@@ -1,0 +1,37 @@
+{
+  "skill": "edge-cursor-prompt",
+  "test_cases": [
+    {
+      "name": "step5_risk_gate",
+      "input": "Write the Cursor prompt for step 5, the risk gate",
+      "assertions": [
+        "Output file docs/prompts/05-risk-gate.md exists",
+        "Contains the Adapter Protocol verbatim",
+        "Names \u22651 failure-path test",
+        "Ends with the receipt contract including touched_gate",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "twelve_files_split",
+      "input": "I need Cursor to build a task that touches 12 files",
+      "assertions": [
+        "Skill splits it into two prompts",
+        "Each prompt is self-contained",
+        "No phrase 'add appropriate tests'",
+        "Env var names only, no secret values"
+      ]
+    },
+    {
+      "name": "general_constraints",
+      "input": "Turn this GitHub issue into a Cursor task",
+      "assertions": [
+        "No phrase 'add appropriate tests'",
+        "No secret values, env var names only",
+        "Budget line present",
+        "Receipt contract with routing flags"
+      ]
+    }
+  ]
+}

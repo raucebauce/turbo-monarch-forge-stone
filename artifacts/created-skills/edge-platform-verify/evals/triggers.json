@@ -1,0 +1,21 @@
+{
+  "skill": "edge-platform-verify",
+  "test_cases": [
+    {
+      "input": "Can we build the Phemex adapter?",
+      "should_trigger": true
+    },
+    {
+      "input": "Verify Kalshi for Georgia before I make a key",
+      "should_trigger": true
+    },
+    {
+      "input": "Is Polymarket usable from the US right now?",
+      "should_trigger": true
+    },
+    {
+      "input": "Write the Coinbase WebSocket ingest worker",
+      "should_trigger": false
+    }
+  ]
+}

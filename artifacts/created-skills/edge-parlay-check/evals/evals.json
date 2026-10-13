@@ -1,0 +1,30 @@
+{
+  "skill": "edge-parlay-check",
+  "test_cases": [
+    {
+      "name": "two_books",
+      "input": "Check this 4-leg NFL parlay with legs from two books",
+      "assertions": [
+        "Labeled correlated portfolio, not parlay",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "no_correlation_model",
+      "input": "Is this same-game parlay correlated? (spread + total, no model)",
+      "assertions": [
+        "Refused with reason",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "negative_edge",
+      "input": "Check this 4-leg NFL parlay with edge < 0",
+      "assertions": [
+        "Shown red, no stake suggested",
+        "Has next: line"
+      ]
+    }
+  ]
+}

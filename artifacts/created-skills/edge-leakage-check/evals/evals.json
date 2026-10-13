@@ -1,0 +1,33 @@
+{
+  "skill": "edge-leakage-check",
+  "test_cases": [
+    {
+      "name": "random_kfold",
+      "input": "Audit the NFL backtest that uses random k-fold",
+      "assertions": [
+        "FAIL on random k-fold for sports",
+        "Verdict Numbers trustworthy: no",
+        "Output file docs/reviews/{date}-leakage-{model_version}.md exists",
+        "Evidence table with file:line",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "missing_as_of",
+      "input": "Check model with feature join without as_of <=",
+      "assertions": [
+        "FAIL with file:line",
+        "Evidence table present"
+      ]
+    },
+    {
+      "name": "mid_price_fills",
+      "input": "Audit paper fills using mid-price",
+      "assertions": [
+        "FAIL",
+        "Verdict trustworthy: no",
+        "Has next: line"
+      ]
+    }
+  ]
+}

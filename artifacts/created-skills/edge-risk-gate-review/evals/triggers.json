@@ -1,0 +1,21 @@
+{
+  "skill": "edge-risk-gate-review",
+  "test_cases": [
+    {
+      "input": "Review this riskgate PR",
+      "should_trigger": true
+    },
+    {
+      "input": "Cursor finished the executor, check it",
+      "should_trigger": true
+    },
+    {
+      "input": "Did the new Analyst tool manifest touch anything it shouldn't?",
+      "should_trigger": true
+    },
+    {
+      "input": "Review the Ledger page layout",
+      "should_trigger": false
+    }
+  ]
+}

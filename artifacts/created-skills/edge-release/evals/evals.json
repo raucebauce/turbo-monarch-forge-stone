@@ -1,0 +1,31 @@
+{
+  "skill": "edge-release",
+  "test_cases": [
+    {
+      "name": "mode_b_n150",
+      "input": "Go-live checklist for NFL totals with n=150",
+      "assertions": [
+        "STOP, blocker n < 200",
+        "Output file docs/releases/{date}-{tag}.md exists",
+        "Evidence per line",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "mode_b_no_papersim",
+      "input": "Can NFL totals go live yet? (no paper-sim-check in 30d)",
+      "assertions": [
+        "STOP",
+        "Blocker named"
+      ]
+    },
+    {
+      "name": "mode_a_no_gate_review",
+      "input": "Release step 6 to prod with gate diff but no risk-gate-review file",
+      "assertions": [
+        "STOP",
+        "Evidence table present"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "skill": "edge-risk-gate-review",
+  "test_cases": [
+    {
+      "name": "unsigned_orders",
+      "input": "Review this riskgate PR that lets executor accept unsigned orders",
+      "assertions": [
+        "FAIL on Signing",
+        "Verdict do-not-merge",
+        "Output file docs/reviews/{date}-gate-{pr}.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "live_enabled_script",
+      "input": "Review diff with a script that sets live_enabled=true",
+      "assertions": [
+        "FAIL on Mode safety",
+        "Blocks merge",
+        "Evidence table present"
+      ]
+    },
+    {
+      "name": "clean_diff",
+      "input": "Review a clean riskgate diff",
+      "assertions": [
+        "Every row PASS or N/A-with-reason",
+        "No empty cells",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    }
+  ]
+}

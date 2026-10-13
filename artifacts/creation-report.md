@@ -1,0 +1,15 @@
+# EDGE Skills v2.1 Creation Report
+
+- edge-adapter-builder: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-cursor-prompt: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-feature-spec: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-improve-app: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-incident: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-leakage-check: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-paper-sim-check: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-parlay-check: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-platform-verify: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-reason-card-eval: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-release: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-skill-forge: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)
+- edge-ux-review: PASS (SKILL.md + CHANGELOG.md + evals/evals.json + evals/triggers.json)

@@ -1,0 +1,21 @@
+{
+  "skill": "edge-skill-forge",
+  "test_cases": [
+    {
+      "input": "Make this a skill",
+      "should_trigger": true
+    },
+    {
+      "input": "We've done this three times by hand this week",
+      "should_trigger": true
+    },
+    {
+      "input": "The incident showed risk-gate-review missed a check \u2014 fix the skill",
+      "should_trigger": true
+    },
+    {
+      "input": "Raise the daily loss cap",
+      "should_trigger": false
+    }
+  ]
+}

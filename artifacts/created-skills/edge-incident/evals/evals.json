@@ -1,0 +1,31 @@
+{
+  "skill": "edge-incident",
+  "test_cases": [
+    {
+      "name": "any_trigger_kill_first",
+      "input": "Reconciliation mismatch on Coinbase",
+      "assertions": [
+        "First action in the output is kill switch confirmation, before any diagnosis",
+        "Output file docs/incidents/{date}-{slug}.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "after_fix_paper",
+      "input": "Orders are firing that I didn't approve \u2014 after fix",
+      "assertions": [
+        "Affected strategies' status is paper regardless of prior",
+        "Postmortem written"
+      ]
+    },
+    {
+      "name": "postmortem_gate",
+      "input": "Feed went stale with live mode on",
+      "assertions": [
+        "Postmortem names what the gate should have caught",
+        "Has next: line"
+      ]
+    }
+  ]
+}

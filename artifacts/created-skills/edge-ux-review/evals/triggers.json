@@ -1,0 +1,21 @@
+{
+  "skill": "edge-ux-review",
+  "test_cases": [
+    {
+      "input": "Review the Urgent tab before it ships",
+      "should_trigger": true
+    },
+    {
+      "input": "UX check on the confirm sheet",
+      "should_trigger": true
+    },
+    {
+      "input": "Does the Ledger pass the B5 rules?",
+      "should_trigger": true
+    },
+    {
+      "input": "Review the riskgate service",
+      "should_trigger": false
+    }
+  ]
+}

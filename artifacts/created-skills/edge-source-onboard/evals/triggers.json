@@ -1,0 +1,21 @@
+{
+  "skill": "edge-source-onboard",
+  "test_cases": [
+    {
+      "input": "Add r/CFB as a source",
+      "should_trigger": true
+    },
+    {
+      "input": "Hook up this capper's Substack RSS",
+      "should_trigger": true
+    },
+    {
+      "input": "Start ingesting the Sleeper trending-adds endpoint",
+      "should_trigger": true
+    },
+    {
+      "input": "Which sources have the best CLV this month?",
+      "should_trigger": false
+    }
+  ]
+}

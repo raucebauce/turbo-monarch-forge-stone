@@ -1,0 +1,21 @@
+{
+  "skill": "edge-improve-app",
+  "test_cases": [
+    {
+      "input": "Monday app-health loop",
+      "should_trigger": true
+    },
+    {
+      "input": "What's broken in the app this week?",
+      "should_trigger": true
+    },
+    {
+      "input": "Turn the Sentry errors into Cursor tasks",
+      "should_trigger": true
+    },
+    {
+      "input": "Which model should be retrained?",
+      "should_trigger": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "skill": "edge-leakage-check",
+  "test_cases": [
+    {
+      "input": "Audit the NFL backtest before I believe the ROI",
+      "should_trigger": true
+    },
+    {
+      "input": "Is this crypto model leaking?",
+      "should_trigger": true
+    },
+    {
+      "input": "Check model_version nfl-v3 for lookahead",
+      "should_trigger": true
+    },
+    {
+      "input": "Add a new feature for pace",
+      "should_trigger": false
+    }
+  ]
+}

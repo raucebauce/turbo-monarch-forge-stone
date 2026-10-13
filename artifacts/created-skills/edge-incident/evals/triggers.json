@@ -1,0 +1,21 @@
+{
+  "skill": "edge-incident",
+  "test_cases": [
+    {
+      "input": "Reconciliation mismatch on Coinbase",
+      "should_trigger": true
+    },
+    {
+      "input": "Orders are firing that I didn't approve",
+      "should_trigger": true
+    },
+    {
+      "input": "Feed went stale with live mode on",
+      "should_trigger": true
+    },
+    {
+      "input": "A unit test is failing in CI",
+      "should_trigger": false
+    }
+  ]
+}

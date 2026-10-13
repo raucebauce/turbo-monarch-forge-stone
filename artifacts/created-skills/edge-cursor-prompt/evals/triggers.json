@@ -1,0 +1,21 @@
+{
+  "skill": "edge-cursor-prompt",
+  "test_cases": [
+    {
+      "input": "Write the Cursor prompt for step 5, the risk gate",
+      "should_trigger": true
+    },
+    {
+      "input": "I need Cursor to build the Urgent tab",
+      "should_trigger": true
+    },
+    {
+      "input": "Turn this GitHub issue into a Cursor task",
+      "should_trigger": true
+    },
+    {
+      "input": "Review the risk gate diff Cursor just produced",
+      "should_trigger": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "skill": "edge-release",
+  "test_cases": [
+    {
+      "input": "Release step 6 to prod",
+      "should_trigger": true
+    },
+    {
+      "input": "Go-live checklist for crypto spot",
+      "should_trigger": true
+    },
+    {
+      "input": "Can NFL totals go live yet?",
+      "should_trigger": true
+    },
+    {
+      "input": "Run the tests",
+      "should_trigger": false
+    }
+  ]
+}

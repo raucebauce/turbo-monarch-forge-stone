@@ -1,0 +1,31 @@
+{
+  "skill": "edge-skill-forge",
+  "test_cases": [
+    {
+      "name": "remove_handoff",
+      "input": "Make this a skill (draft that removes an Output & handoff block)",
+      "assertions": [
+        "Rejected at lint",
+        "Output file docs/skills/{date}-{name}.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "new_tool_scope",
+      "input": "We've done this three times by hand this week (draft granting an agent a new tool scope)",
+      "assertions": [
+        "Rejected at lint"
+      ]
+    },
+    {
+      "name": "approved_skill",
+      "input": "The incident showed risk-gate-review missed a check \u2014 fix the skill (approved)",
+      "assertions": [
+        "Changelog row skill_installed with PR link",
+        "Eval fails if the skill loaded without one",
+        "Has next: line"
+      ]
+    }
+  ]
+}

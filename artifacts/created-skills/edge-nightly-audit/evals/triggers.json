@@ -1,0 +1,21 @@
+{
+  "skill": "edge-nightly-audit",
+  "test_cases": [
+    {
+      "input": "Run the nightly audit",
+      "should_trigger": true
+    },
+    {
+      "input": "Interpret last night's Auditor output",
+      "should_trigger": true
+    },
+    {
+      "input": "Which category is closest to the live gate?",
+      "should_trigger": true
+    },
+    {
+      "input": "Promote the NFL model to live",
+      "should_trigger": false
+    }
+  ]
+}

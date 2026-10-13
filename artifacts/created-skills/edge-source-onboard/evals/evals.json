@@ -1,0 +1,33 @@
+{
+  "skill": "edge-source-onboard",
+  "test_cases": [
+    {
+      "name": "capper_rss",
+      "input": "Hook up this capper's Substack RSS",
+      "assertions": [
+        "Classified as claim-type",
+        "source_claims parsing specified",
+        "Weight 0",
+        "Output file docs/sources/{name}.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "weather_api",
+      "input": "Start ingesting a weather API",
+      "assertions": [
+        "Classified as feature-type",
+        "Hands off to edge-feature-spec"
+      ]
+    },
+    {
+      "name": "as_of_required",
+      "input": "Add r/CFB as a source",
+      "assertions": [
+        "as_of field named; if none exists, output says ingest time explicitly",
+        "Has next: line"
+      ]
+    }
+  ]
+}

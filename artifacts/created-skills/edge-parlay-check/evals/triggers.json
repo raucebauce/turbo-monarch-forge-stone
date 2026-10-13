@@ -1,0 +1,21 @@
+{
+  "skill": "edge-parlay-check",
+  "test_cases": [
+    {
+      "input": "Check this 4-leg NFL parlay",
+      "should_trigger": true
+    },
+    {
+      "input": "Is this same-game parlay correlated?",
+      "should_trigger": true
+    },
+    {
+      "input": "Build me a cross-sport parlay for Saturday",
+      "should_trigger": true
+    },
+    {
+      "input": "What's the ROI on parlays this month?",
+      "should_trigger": false
+    }
+  ]
+}

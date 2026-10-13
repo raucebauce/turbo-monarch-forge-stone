@@ -1,0 +1,30 @@
+{
+  "skill": "edge-improve-app",
+  "test_cases": [
+    {
+      "name": "orders_defect",
+      "input": "Monday app-health loop (defect touching orders)",
+      "assertions": [
+        "Score \u00d73 and ranked above cosmetic",
+        "Output file docs/IMPROVE_ME.md updated",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "no_duplicate_issue",
+      "input": "What's broken in the app this week? (existing open issue for same fingerprint)",
+      "assertions": [
+        "No duplicate opened"
+      ]
+    },
+    {
+      "name": "needs_ross",
+      "input": "Turn the Sentry errors into Cursor tasks (fix needing a cap change)",
+      "assertions": [
+        "Marked needs Ross, not proposed as a prompt",
+        "Has next: line"
+      ]
+    }
+  ]
+}

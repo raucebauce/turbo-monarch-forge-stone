@@ -1,0 +1,21 @@
+{
+  "skill": "edge-reason-card-eval",
+  "test_cases": [
+    {
+      "input": "Are the Analyst reason cards actually accurate?",
+      "should_trigger": true
+    },
+    {
+      "input": "Weekly reason card eval",
+      "should_trigger": true
+    },
+    {
+      "input": "I changed the Analyst prompt \u2014 evaluate it",
+      "should_trigger": true
+    },
+    {
+      "input": "Write the Analyst prompt",
+      "should_trigger": false
+    }
+  ]
+}

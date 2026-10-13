@@ -1,0 +1,21 @@
+{
+  "skill": "edge-feature-spec",
+  "test_cases": [
+    {
+      "input": "Add referee crew tendencies as a feature",
+      "should_trigger": true
+    },
+    {
+      "input": "I want funding-rate delta in the crypto model",
+      "should_trigger": true
+    },
+    {
+      "input": "New feature: hours between injury report and kickoff",
+      "should_trigger": true
+    },
+    {
+      "input": "Why did the model's Brier get worse this week?",
+      "should_trigger": false
+    }
+  ]
+}

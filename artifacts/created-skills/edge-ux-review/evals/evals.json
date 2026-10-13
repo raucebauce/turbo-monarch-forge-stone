@@ -1,0 +1,30 @@
+{
+  "skill": "edge-ux-review",
+  "test_cases": [
+    {
+      "name": "live_no_chrome",
+      "input": "Review the Urgent tab before it ships (live mode with no chrome color change)",
+      "assertions": [
+        "FAIL",
+        "Output file docs/reviews/{date}-ux-urgent.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "expired_deep_link",
+      "input": "UX check on the confirm sheet (/urgent/{id} returns 404 for expired pick)",
+      "assertions": [
+        "FAIL"
+      ]
+    },
+    {
+      "name": "button_not_idempotent",
+      "input": "Does the Ledger pass the B5 rules? (button stays enabled after first tap)",
+      "assertions": [
+        "FAIL",
+        "Has next: line"
+      ]
+    }
+  ]
+}

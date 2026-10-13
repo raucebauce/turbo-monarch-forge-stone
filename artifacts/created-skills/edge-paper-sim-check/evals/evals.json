@@ -1,0 +1,30 @@
+{
+  "skill": "edge-paper-sim-check",
+  "test_cases": [
+    {
+      "name": "insufficient_sample",
+      "input": "Validate the paper simulator for Coinbase with 30 pairs",
+      "assertions": [
+        "Insufficient sample, no verdict",
+        "Output file docs/reviews/{date}-papersim-coinbase.md exists"
+      ]
+    },
+    {
+      "name": "optimistic_bias",
+      "input": "Before I go live on NFL spreads, is paper honest? (sim 2 bps better)",
+      "assertions": [
+        "FAIL (optimistic bias)",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "within_tolerance",
+      "input": "We changed the slippage function \u2014 recheck (within tolerance)",
+      "assertions": [
+        "PASS with the error table",
+        "Has next: line"
+      ]
+    }
+  ]
+}

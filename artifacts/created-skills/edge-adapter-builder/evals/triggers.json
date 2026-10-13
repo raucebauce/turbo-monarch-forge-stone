@@ -1,0 +1,21 @@
+{
+  "skill": "edge-adapter-builder",
+  "test_cases": [
+    {
+      "input": "Build the Kalshi adapter",
+      "should_trigger": true
+    },
+    {
+      "input": "Implement Coinbase preview/place/cancel against sandbox",
+      "should_trigger": true
+    },
+    {
+      "input": "Make a deep-link adapter for DraftKings",
+      "should_trigger": true
+    },
+    {
+      "input": "Is Kalshi legal in Georgia?",
+      "should_trigger": false
+    }
+  ]
+}

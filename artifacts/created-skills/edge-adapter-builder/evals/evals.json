@@ -1,0 +1,31 @@
+{
+  "skill": "edge-adapter-builder",
+  "test_cases": [
+    {
+      "name": "no_go_file",
+      "input": "Build the Kalshi adapter (no GO file exists)",
+      "assertions": [
+        "Skill stops and says so",
+        "No code produced"
+      ]
+    },
+    {
+      "name": "coinbase_tests",
+      "input": "Implement Coinbase preview/place/cancel against sandbox",
+      "assertions": [
+        "Tests listed include idempotent double-place and timeout\u2192unknown",
+        "Output file docs/reviews/{date}-adapter-coinbase.md exists",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "deep_link",
+      "input": "Make a deep-link adapter for DraftKings",
+      "assertions": [
+        "place() returns URL + pending_external",
+        "Never claims a fill"
+      ]
+    }
+  ]
+}

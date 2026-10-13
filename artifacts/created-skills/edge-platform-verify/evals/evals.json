@@ -1,0 +1,40 @@
+{
+  "skill": "edge-platform-verify",
+  "test_cases": [
+    {
+      "name": "phemex_verify",
+      "input": "Can we build the Phemex adapter?",
+      "assertions": [
+        "Output file docs/reviews/{date}-verify-phemex.md exists",
+        "Contains a quoted ToS clause with URL and date",
+        "Decision is NO-GO or DEEP-LINK-ONLY",
+        "No workaround suggested",
+        "Evidence table present with claim | URL | PASS/FAIL/WARN rows",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "coinbase_verify",
+      "input": "Verify Coinbase for Georgia before I make a key",
+      "assertions": [
+        "Output file docs/reviews/{date}-verify-coinbase.md exists",
+        "Decision is GO",
+        "Lists key scopes without withdraw permission",
+        "Names env vars",
+        "Evidence table present",
+        "Has next: line"
+      ]
+    },
+    {
+      "name": "any_venue_url_required",
+      "input": "Is Polymarket usable from the US right now?",
+      "assertions": [
+        "Output file docs/reviews/{date}-verify-polymarket.md exists",
+        "Every claim row has a URL",
+        "Evidence table present",
+        "Has next: line",
+        "A row without a URL would fail the eval"
+      ]
+    }
+  ]
+}

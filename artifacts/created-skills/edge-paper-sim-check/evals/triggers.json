@@ -1,0 +1,21 @@
+{
+  "skill": "edge-paper-sim-check",
+  "test_cases": [
+    {
+      "input": "Validate the paper simulator for Coinbase",
+      "should_trigger": true
+    },
+    {
+      "input": "Before I go live on NFL spreads, is paper honest?",
+      "should_trigger": true
+    },
+    {
+      "input": "We changed the slippage function \u2014 recheck",
+      "should_trigger": true
+    },
+    {
+      "input": "Flip NFL spreads to live",
+      "should_trigger": false
+    }
+  ]
+}
