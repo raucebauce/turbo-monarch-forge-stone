@@ -1,4 +1,4 @@
-# EDGE skills — v2.1 (16 skills)
+# EDGE skills — v2.2 (16 skills)
 
 Add to Grok: Skills → Add Skill → each SKILL.md. Reference by name in prompts. See CHAIN.md for how they hand off to each other.
 
@@ -22,3 +22,5 @@ Add to Grok: Skills → Add Skill → each SKILL.md. Reference by name in prompt
 | edge-incident | Reconciliation mismatch, runaway orders, outage, key compromise, unexpected live loss |
 
 v2 changes: every skill now has an Output & handoff section (file path, changelog row, next skill, evidence format); cursor-prompt has a receipt contract with routing flags and a budget line; nightly-audit handles postponed games, pending_external picks, and agent cost guard; release adds simulator validation and a 48h live warm-up at half caps; risk-gate-review adds the agent-boundary check; five new skills fill the gaps (source onboarding, paper-sim validation, incident, reason-card eval, parlay check).
+
+v2.2 changes: edge-source-onboard, edge-paper-sim-check, edge-parlay-check, edge-reason-card-eval, edge-incident and edge-skill-forge now carry the full Output & handoff block (docs path, changelog row, next skill, evidence format), so every skill meets the contract in CHAIN.md and edge-skill-forge's house format. edge-parlay-check also logs to `docs/parlays/{date}.md`; edge-paper-sim-check states the `insufficient sample` verdict below 50 pairs; edge-incident hands missing-check lessons to edge-skill-forge. Every eval now asserts the common pass criteria. Check the set with `python3 tools/validate_skills.py`.

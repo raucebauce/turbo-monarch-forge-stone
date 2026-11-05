@@ -20,7 +20,10 @@
         "Skill splits it into two prompts",
         "Each prompt is self-contained",
         "No phrase 'add appropriate tests'",
-        "Env var names only, no secret values"
+        "Env var names only, no secret values",
+        "Output file docs/prompts/{nn}-{slug}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -30,7 +33,10 @@
         "No phrase 'add appropriate tests'",
         "No secret values, env var names only",
         "Budget line present",
-        "Receipt contract with routing flags"
+        "Receipt contract with routing flags",
+        "Output file docs/prompts/{nn}-{slug}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     }
   ]

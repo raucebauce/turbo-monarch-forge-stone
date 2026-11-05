@@ -15,7 +15,10 @@
       "name": "no_duplicate_issue",
       "input": "What's broken in the app this week? (existing open issue for same fingerprint)",
       "assertions": [
-        "No duplicate opened"
+        "No duplicate opened",
+        "Output file docs/IMPROVE_ME.md updated",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -23,6 +26,8 @@
       "input": "Turn the Sentry errors into Cursor tasks (fix needing a cap change)",
       "assertions": [
         "Marked needs Ross, not proposed as a prompt",
+        "Output file docs/IMPROVE_ME.md updated",
+        "Evidence table present",
         "Has next: line"
       ]
     }

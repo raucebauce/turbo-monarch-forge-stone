@@ -6,6 +6,7 @@
       "input": "Check this 4-leg NFL parlay with legs from two books",
       "assertions": [
         "Labeled correlated portfolio, not parlay",
+        "Output file docs/parlays/{date}.md exists",
         "Evidence table present",
         "Has next: line"
       ]
@@ -15,6 +16,8 @@
       "input": "Is this same-game parlay correlated? (spread + total, no model)",
       "assertions": [
         "Refused with reason",
+        "Output file docs/parlays/{date}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     },
@@ -23,6 +26,8 @@
       "input": "Check this 4-leg NFL parlay with edge < 0",
       "assertions": [
         "Shown red, no stake suggested",
+        "Output file docs/parlays/{date}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

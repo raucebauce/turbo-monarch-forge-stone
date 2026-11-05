@@ -16,7 +16,10 @@
       "input": "Orders are firing that I didn't approve \u2014 after fix",
       "assertions": [
         "Affected strategies' status is paper regardless of prior",
-        "Postmortem written"
+        "Postmortem written",
+        "Output file docs/incidents/{date}-{slug}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -24,6 +27,8 @@
       "input": "Feed went stale with live mode on",
       "assertions": [
         "Postmortem names what the gate should have caught",
+        "Output file docs/incidents/{date}-{slug}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

@@ -19,5 +19,8 @@ Paper results are only as honest as the fill model. Measure it.
 - Funding/borrow costs applied to perps held across funding timestamps.
 
 ## Output & handoff
-- Write to `docs/reviews/{date}-papersim-{venue}.md` with the error table and verdict.
-- PASS → edge-release mode B may proceed; FAIL → `model_versions` for that venue stay `candidate`, edge-cursor-prompt for simulator fixes.
+- Write the result to `docs/reviews/{date}-papersim-{venue}.md` with the error table and bias direction. Include: skill name, inputs (commit/PR/model_version/venue), verdict, evidence table, and `next:` line.
+- Fewer than 50 matched pairs → verdict `insufficient sample`, no PASS/FAIL; edge-release mode B stays blocked.
+- Append one `changelog` row (actor=<skill>, action, before/after if any, reason=<path to the file>).
+- Hands off: PASS → edge-release mode B may proceed; FAIL → `model_versions` for that venue stay `candidate`, edge-cursor-prompt for simulator fixes.
+- Evidence rows are `claim | file:line or URL | PASS/FAIL/WARN`. No claim without a location.

@@ -22,5 +22,7 @@ A source is untrusted until the Auditor says otherwise. Onboarding makes it meas
 reconnect after drop · dedup on replay · `as_of` never after `fetched_at` · cap stops ingestion · malformed item does not crash the worker.
 
 ## Output & handoff
-- Write to `docs/sources/{name}.md`: access path, cost, kind, as_of field, dedup key, starting weight 0.
+- Write the result to `docs/sources/{name}.md`: access path, cost, kind, as_of field, dedup key, starting weight 0. Include: skill name, inputs (commit/PR/model_version/venue), verdict, evidence table, and `next:` line.
+- Append one `changelog` row (actor=<skill>, action, before/after if any, reason=<path to the file>).
 - Hands off: feature-type → edge-feature-spec; claim-type → edge-nightly-audit scores it after n ≥ 30; weight 0 for 30 days with n < 30 → auto-disable and changelog it.
+- Evidence rows are `claim | file:line or URL | PASS/FAIL/WARN`. No claim without a location.

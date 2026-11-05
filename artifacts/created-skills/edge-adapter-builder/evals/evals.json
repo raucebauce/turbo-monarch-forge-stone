@@ -6,7 +6,10 @@
       "input": "Build the Kalshi adapter (no GO file exists)",
       "assertions": [
         "Skill stops and says so",
-        "No code produced"
+        "No code produced",
+        "Output file docs/reviews/{date}-adapter-{venue}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -24,7 +27,10 @@
       "input": "Make a deep-link adapter for DraftKings",
       "assertions": [
         "place() returns URL + pending_external",
-        "Never claims a fill"
+        "Never claims a fill",
+        "Output file docs/reviews/{date}-adapter-{venue}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     }
   ]

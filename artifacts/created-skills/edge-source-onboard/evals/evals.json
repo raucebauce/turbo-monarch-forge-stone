@@ -18,7 +18,10 @@
       "input": "Start ingesting a weather API",
       "assertions": [
         "Classified as feature-type",
-        "Hands off to edge-feature-spec"
+        "Hands off to edge-feature-spec",
+        "Output file docs/sources/{name}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -26,6 +29,8 @@
       "input": "Add r/CFB as a source",
       "assertions": [
         "as_of field named; if none exists, output says ingest time explicitly",
+        "Output file docs/sources/{name}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

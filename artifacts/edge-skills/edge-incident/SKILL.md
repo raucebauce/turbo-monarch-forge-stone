@@ -31,4 +31,7 @@ Order matters. Do not skip to diagnosis.
 What happened · impact ($, picks) · timeline · root cause · what the gate should have caught · fixes shipped · what changes in a skill or checklist.
 
 ## Output & handoff
-- `docs/incidents/{date}-{slug}.md` + changelog rows for every action. Push a 3-line summary to Ross. Update the relevant skill if the incident revealed a missing check.
+- Write the result to `docs/incidents/{date}-{slug}.md` (exposure, timeline, postmortem). Include: skill name, inputs (commit/PR/model_version/venue), verdict, evidence table, and `next:` line.
+- Append one `changelog` row per action taken (actor=<skill>, action, before/after if any, reason=<path to the file>). Push a 3-line summary to Ross.
+- Hands off: fix → edge-cursor-prompt → edge-risk-gate-review → edge-release mode A; a missing check → edge-skill-forge upgrades the skill that should have caught it (PR, Ross approves)
+- Evidence rows are `claim | file:line or URL | PASS/FAIL/WARN`. No claim without a location.

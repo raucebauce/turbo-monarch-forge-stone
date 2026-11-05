@@ -8,6 +8,7 @@
         "STOP, blocker n < 200",
         "Output file docs/releases/{date}-{tag}.md exists",
         "Evidence per line",
+        "Evidence table present",
         "Has next: line"
       ]
     },
@@ -16,7 +17,10 @@
       "input": "Can NFL totals go live yet? (no paper-sim-check in 30d)",
       "assertions": [
         "STOP",
-        "Blocker named"
+        "Blocker named",
+        "Output file docs/releases/{date}-{tag}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -24,7 +28,9 @@
       "input": "Release step 6 to prod with gate diff but no risk-gate-review file",
       "assertions": [
         "STOP",
-        "Evidence table present"
+        "Output file docs/releases/{date}-{tag}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     }
   ]

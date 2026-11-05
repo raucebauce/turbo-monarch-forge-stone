@@ -18,7 +18,9 @@
       "assertions": [
         "FAIL on Mode safety",
         "Blocks merge",
-        "Evidence table present"
+        "Output file docs/reviews/{date}-gate-{pr}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -27,6 +29,7 @@
       "assertions": [
         "Every row PASS or N/A-with-reason",
         "No empty cells",
+        "Output file docs/reviews/{date}-gate-{pr}.md exists",
         "Evidence table present",
         "Has next: line"
       ]

@@ -15,7 +15,10 @@
       "name": "roi_up_clv_down",
       "input": "Interpret last night's Auditor output (ROI +4% but CLV \u22121% in sports)",
       "assertions": [
-        "Flagged as likely luck"
+        "Flagged as likely luck",
+        "Output file docs/audits/{date}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -24,6 +27,8 @@
       "assertions": [
         "Never emits a paper\u2192live promotion",
         "Eval fails if any changelog row does",
+        "Output file docs/audits/{date}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

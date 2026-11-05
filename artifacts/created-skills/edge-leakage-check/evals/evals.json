@@ -17,7 +17,9 @@
       "input": "Check model with feature join without as_of <=",
       "assertions": [
         "FAIL with file:line",
-        "Evidence table present"
+        "Output file docs/reviews/{date}-leakage-{model_version}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -26,6 +28,8 @@
       "assertions": [
         "FAIL",
         "Verdict trustworthy: no",
+        "Output file docs/reviews/{date}-leakage-{model_version}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

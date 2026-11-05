@@ -25,5 +25,7 @@ The LLM explains; it does not decide. Prove it earns its cost.
 Any Analyst prompt edit is a `model_version` of its own (`llm-analyst-vN`), shadow-run 7 days before replacing.
 
 ## Output & handoff
-- `docs/reviews/{date}-reasoncards.md`: score table, hallucination rate, calibration, cost, recommendation on w per domain.
-- Hallucination rate > 5% → FAIL, prompt revision via edge-cursor-prompt; w recommendations → edge-nightly-audit applies within guardrails.
+- Write the result to `docs/reviews/{date}-reasoncards.md`: score table, hallucination rate, calibration, cost, recommendation on w per domain. Include: skill name, inputs (commit/PR/model_version/venue), verdict, evidence table, and `next:` line.
+- Append one `changelog` row (actor=<skill>, action, before/after if any, reason=<path to the file>).
+- Hands off: hallucination rate > 5% → FAIL, prompt revision via edge-cursor-prompt; w recommendations → edge-nightly-audit applies within guardrails.
+- Evidence rows are `claim | file:line or URL | PASS/FAIL/WARN`. No claim without a location.

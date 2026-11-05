@@ -5,7 +5,10 @@
       "name": "no_hypothesis",
       "input": "Add referee crew tendencies as a feature (no hypothesis stated)",
       "assertions": [
-        "Skill refuses"
+        "Skill refuses",
+        "Output file docs/features/{name}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -23,6 +26,8 @@
       "input": "New feature: hours between injury report and kickoff",
       "assertions": [
         "No-future test present (row with as_of > decision_time leaves value unchanged)",
+        "Output file docs/features/{name}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

@@ -38,6 +38,8 @@ Only numeric thresholds explicitly marked `tunable:` inside a skill (e.g., stale
 - Modify this skill's guardrail section. Changes here are Ross-authored only.
 
 ## Output & handoff
-- `docs/skills/{date}-{name}.md` (gap statement, draft, shadow report) + the PR. Changelog row `skill_proposed`.
+- Write the result to `docs/skills/{date}-{name}.md` (gap statement, draft, lint result, shadow report) + the PR. Include: skill name, inputs (commit/PR/model_version/venue), verdict, evidence table, and `next:` line.
+- Append one `changelog` row `skill_proposed` (actor=<skill>, action, before/after if any, reason=<path to the file>); on approval, `skill_installed` with the PR link (step 7).
 - Hands off: Ross approves → Orchestrator loads; the new skill's own handoff lines slot it into CHAIN.md.
+- Evidence rows are `claim | file:line or URL | PASS/FAIL/WARN`. No claim without a location.
 

@@ -15,7 +15,10 @@
       "name": "new_tool_scope",
       "input": "We've done this three times by hand this week (draft granting an agent a new tool scope)",
       "assertions": [
-        "Rejected at lint"
+        "Rejected at lint",
+        "Output file docs/skills/{date}-{name}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -24,6 +27,8 @@
       "assertions": [
         "Changelog row skill_installed with PR link",
         "Eval fails if the skill loaded without one",
+        "Output file docs/skills/{date}-{name}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

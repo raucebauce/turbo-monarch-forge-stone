@@ -15,7 +15,10 @@
       "name": "expired_deep_link",
       "input": "UX check on the confirm sheet (/urgent/{id} returns 404 for expired pick)",
       "assertions": [
-        "FAIL"
+        "FAIL",
+        "Output file docs/reviews/{date}-ux-{screen}.md exists",
+        "Evidence table present",
+        "Has next: line"
       ]
     },
     {
@@ -23,6 +26,8 @@
       "input": "Does the Ledger pass the B5 rules? (button stays enabled after first tap)",
       "assertions": [
         "FAIL",
+        "Output file docs/reviews/{date}-ux-{screen}.md exists",
+        "Evidence table present",
         "Has next: line"
       ]
     }

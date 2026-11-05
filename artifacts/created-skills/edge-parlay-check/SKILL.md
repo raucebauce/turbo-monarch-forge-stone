@@ -25,6 +25,10 @@ lifecycle: active
 Line history, injury timing (hours to kickoff), rest/travel, weather, referee crew, pace, and any "where available" field marked explicitly as unavailable rather than blank.
 
 ## Output & handoff
+- Write the result to `docs/parlays/{date}.md`, one section per checked parlay, appended through the day. Include: skill name, inputs (commit/PR/model_version/venue), verdict, evidence table, and `next:` line.
 - Parlay record in `picks` as one pick with `category=parlay_<sport>` and legs in `parlay_legs`; Auditor scores both the parlay and each leg.
 - Any hard-rule violation → not shown; logged as a rejected parlay with reason.
+- Append one `changelog` row (actor=<skill>, action, before/after if any, reason=<path to the file>).
+- Hands off: shown → edge-nightly-audit scores the parlay and each leg; correlated portfolio → shown as labeled singles; rejected → not shown, reason in the file
+- Evidence rows are `claim | file:line or URL | PASS/FAIL/WARN`. No claim without a location.
 
